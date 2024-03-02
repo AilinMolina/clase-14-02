@@ -1,0 +1,99 @@
+<!--  TODAS LAS PÁGINAS DEBEN TENER H1
+
+Recomendación W3Schools
+
+Para ver el código de una página: F12.
+Cada div representa un contenedor.
+
+Cuadrado con flecha: inspeccionador de elementos. Cuando lo apretamos cambia la forma de navegación  para poder encontrar el elemento en el código.
+
+h1: titulo más importante, todos los h funcionan por la misma jerarquía. Es una etiqueta semantica.
+
+El tamaño del texto no determina la etiqueta, ya que puede ser un h1 pero que en CSS se haya modificado el tamaño, haciendolo parecer un h2.
+
+CSS: lenguaje de estilado.
+SEO: Search Engine Optimization.
+
+p: etiqueta para hacer texto.
+loremN: texto de relleno, en la N se pone el número de cantidad que quiero que aparezca.
+loremo*N: nos da el número de parrafos indicados.
+
+FORMAS DE REDIRECCIONAMIENTO
+a: etiqueta de anclaje. Nos envía a otro lugar. Cambia la dirección del navegador.
+	
+-3 tipos de vinculos:
+	-href: dirección de referencia. Cambia la página actual a la de la dirección.
+	-target: lo agregamos para que no suceda, "_blank" dice que abra una nueva página en blanco.
+    <a href="" target="_blank></a>
+
+Dominio: nombre de la página. Ej: www.w3schools.com
+-Todas las páginas nacen de un dominio.
+-En nuestro caso, el dominio es lo que está atrás de /index3.html
+EJEMPLO: tengo 2 archivos en el mismo dominio, index3.html y contacto.html
+
+Rutas relativas: va a ser relativo al nombre del dominio que tengo. 
+Si quiero direccionarme a una página de mi propio dominio: <a href="./contacto.html"></a>, "./" de la carpeta en donde estoy me voy a mover a ese archivo.
+
+SEPARAR EN CARPETAS LOS ARCHIVOS HTML, entonces creo otra carpeta (pages) y ahí paso contacto.html
+<a href="./pages/contacto.html">
+
+Estoy en contacto.html y quiero volver a atrás:
+<a href="../index3.html">
+Si una carpeta esta dentro de otra (dentro de "pages" esta "special" y contacto.html esta dentro de "special"):
+<a href="../../index3.html">
+
+br: salto en línea.
+-Si quiero que un link este abajo del otro: 
+<a href="https://www.w3schools.com/" target="_blank">Link a W3Schools</a>
+<br>
+<a href="./pages/contacto.html">Ir a la página de contacto</a>
+-USAR ÚNICAMENTE EN TEXTOS.
+
+hr: línea larga, NO USAR. SE HACE EN CSS.
+
+Anclaje dentro de la misma página: 
+    (HACIA ARRIBA)
+    1) Al lugar al que me muevo, debe ser marcado previamente con un id.
+    <h1 id="titulo">
+    2) <a href="#titulo">
+
+    (HACIA ABAJO)
+    1) <h1 id="titulo">Titulo principal</h1>
+    <a href="#abajo">Ir abajo</a>
+    2) <a href="#titulo" id="abajo">Volver a arriba</a>
+
+ETIQUETAS MULTIMEDIA: nos permiten poner distintos tipos de contenido que no sea texto. Ej: videos, imagenes, audio.
+1) De internet <img src="" width="" height="" alt="">: src (source), link de la imagen; width, modifica el ancho; height, modifica el alto; alt, texto alternativo de la imagen.
+-Width y Height: Si esta bien uno, no determinemos el otro.
+-Alt: es obligatorio ponerlo, es una regla de SEO y de Accesibilidad. 
+
+2) De nuestra carpeta: <img src="../images/blackstones.jpg" alt="">
+
+3) Audio: <audio src="../audios/audio-ladygaga.mp3" controls>
+-autoplay: se reproduce automaticamente.
+-loop: se repite el audio.
+
+4) Video de carpeta: <video src="../videos/video.mp4" controls>
+
+5) Video con link: vamos a Compartir, apretamos Insertar, copio el Iframe y lo pego así.
+
+OTRO USO DE IFRAME:
+<iframe src="./contacto.html" width="200" height="300">: miniatura de la página contacto.html, se pone una página comprimida dentro de otra página.
+
+FORMULARIOS
+<form></form>, viene con el atributo action pero no lo vamos a usar.
+
+<input type="">: etiqueta de autocierre, con el atributo type, el cual indica que tipo de input estoy escribiendo. El input es la entrada de datos.
+-En MDN podemos ver mejor los tipos de input.
+
+<label for="">: para poner una descripción. Para que se remarque ponemos un id en el input y lo indicamos en for.
+-SI O SI DEBE ESTAR EN UNA PÁGINA.
+-placeholder: texto que viene por defecto pero no esta escrito.
+-maxlength y minlength: número de caracteres.
+
+Todo formulario debe tener ENVIAR:
+-submit: nos da el boton de ENVIAR, se pone en el input. Toma el idioma que tiene el navegador y pone ENVIAR en el idioma que tengo.
+
+required: atributo que pide que si o si este escrito.
+
+ -->
